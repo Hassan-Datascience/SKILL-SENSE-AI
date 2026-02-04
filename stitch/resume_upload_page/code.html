@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillSense AI - Resume Upload</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d141b] transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7edf3] dark:border-slate-800 bg-white dark:bg-background-dark px-10 py-3">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">SkillSense AI</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<div class="flex gap-2">
+<button class="flex size-10 items-center justify-center rounded-lg bg-background-light dark:bg-slate-800 text-[#0d141b] dark:text-white">
+<span class="material-symbols-outlined">help</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-background-light dark:bg-slate-800 text-[#0d141b] dark:text-white">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200 dark:border-slate-700" data-alt="User profile avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAl9E9fPThhFzGPLyE18_B39l9odpUbOk7hYk1kLOfkOLvzTbBQJM3ui5foabUqxe_x2xeV3L55HlHpz9NMkB7094jdCY-xPeIEo20qYi1QVBfNSYWPEYHcsCicd9hEQkSmWHoaIJFUtwJz9UCpTkah04ndQKQj16a4S_UFxrI3BRmVEVseHHmFo5pGskPAnOL75A1cKjeU-8JmGx0M34HqD4FF_ax3exTxVNTpnXjE8A58JI9EkNj18pYOJoDQ0auv7a3admXH0tLI");'></div>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center justify-center py-12 px-4">
+<div class="w-full max-w-[800px] flex flex-col">
+<!-- Headline & Body Text -->
+<div class="mb-8">
+<h1 class="text-[#0d141b] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3">Unlock Your Career Potential</h1>
+<p class="text-[#4c739a] dark:text-slate-400 text-base font-normal leading-normal text-center max-w-[600px] mx-auto">
+                        SkillSense AI will analyze your strengths and identify skill gaps in seconds. Let our AI guide your next career move.
+                    </p>
+</div>
+<!-- Main Interaction Card -->
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-[#e7edf3] dark:border-slate-800 overflow-hidden">
+<!-- Empty State / Upload Zone -->
+<div class="p-8">
+<div class="flex flex-col items-center gap-6 rounded-xl border-2 border-dashed border-[#cfdbe7] dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/30 px-6 py-14 transition-colors hover:border-primary/50 group cursor-pointer">
+<div class="flex flex-col items-center gap-4 text-center">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">cloud_upload</span>
+</div>
+<div class="flex max-w-[480px] flex-col items-center gap-2">
+<p class="text-[#0d141b] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Upload your Resume</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">
+                                        Drag &amp; drop your resume here, or <span class="text-primary font-medium">browse files</span>
+</p>
+<p class="text-[#4c739a]/60 dark:text-slate-500 text-xs font-normal">
+                                        Supports PDF, TXT (Max 5MB)
+                                    </p>
+</div>
+</div>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all">
+<span>Browse Files</span>
+</button>
+</div>
+</div>
+<!-- File List & Analysis Progress (Simulated Active State) -->
+<div class="border-t border-[#e7edf3] dark:border-slate-800 bg-white dark:bg-slate-900 p-6 space-y-6">
+<!-- List Item -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-slate-800/50 rounded-lg px-4 min-h-[72px] py-2 justify-between border border-[#e7edf3] dark:border-slate-800">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#0d141b] dark:text-white text-base font-medium leading-normal line-clamp-1">Senior_Product_Designer_Resume_2024.pdf</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">2.4 MB • Processing file...</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="text-primary flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Progress Section -->
+<div class="space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="font-medium text-[#0d141b] dark:text-white">AI Analysis in progress...</span>
+<span class="text-primary font-bold">65%</span>
+</div>
+<!-- Progress Bar -->
+<div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%"></div>
+</div>
+<div class="flex gap-4 pt-1">
+<div class="flex items-center gap-1.5 text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-sm">check</span>
+                                    Text Extracted
+                                </div>
+<div class="flex items-center gap-1.5 text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-sm">sync</span>
+                                    Extracting Skills
+                                </div>
+<div class="flex items-center gap-1.5 text-xs text-slate-400">
+<span class="material-symbols-outlined text-sm">pending</span>
+                                    Mapping Roles
+                                </div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-2">
+<button class="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] opacity-80 cursor-wait">
+<span class="material-symbols-outlined mr-2 animate-spin text-lg">progress_activity</span>
+                                Analyzing Skills...
+                            </button>
+</div>
+</div>
+</div>
+<!-- Guidance Footer -->
+<div class="mt-10 flex flex-col md:flex-row gap-6 justify-center items-center">
+<div class="flex items-center gap-3 text-[#4c739a] dark:text-slate-400">
+<span class="material-symbols-outlined text-primary">security</span>
+<span class="text-sm">Your data is encrypted and secure</span>
+</div>
+<div class="hidden md:block w-px h-4 bg-slate-300 dark:bg-slate-700"></div>
+<div class="flex items-center gap-3 text-[#4c739a] dark:text-slate-400">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<span class="text-sm">GDPR Compliant Analysis</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="py-6 border-t border-[#e7edf3] dark:border-slate-800 text-center">
+<p class="text-[#4c739a] dark:text-slate-500 text-xs">© 2024 SkillSense AI. All rights reserved.</p>
+</footer>
+</div>
+</body></html>

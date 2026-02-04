@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillSense AI - Advanced Career Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-cyan": "#00f5ff",
+                        "accent-violet": "#a855f7",
+                        "bg-deep-navy": "#0a0f1d",
+                        "bg-charcoal": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-[#05070a] text-slate-300 antialiased;
+                background-image: 
+                    radial-gradient(circle at 20% 30%, rgba(0, 245, 255, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+            }
+        }
+        .glass-card {
+            @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+        }
+        .cyan-glow {
+            text-shadow: 0 0 15px rgba(0, 245, 255, 0.4);
+        }
+        .orbit-halo {
+            background: radial-gradient(circle at center, rgba(0, 245, 255, 0.15) 0%, transparent 70%);
+        }
+        .stardust {
+            background-image: radial-gradient(white 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="fixed inset-0 pointer-events-none stardust opacity-10"></div>
+<header class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#05070a]/60 backdrop-blur-xl px-6 lg:px-12 py-4">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-gradient-to-br from-primary-cyan to-accent-violet rounded-lg flex items-center justify-center text-black">
+<span class="material-symbols-outlined font-bold">psychology</span>
+</div>
+<h2 class="text-white text-xl font-bold tracking-tighter">SkillSense <span class="text-primary-cyan">AI</span></h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-400 hover:text-primary-cyan transition-colors" href="#">Insights</a>
+<a class="text-sm font-medium text-slate-400 hover:text-primary-cyan transition-colors" href="#">Technology</a>
+<a class="text-sm font-medium text-slate-400 hover:text-primary-cyan transition-colors" href="#">Privacy</a>
+<a class="text-sm font-medium text-slate-400 hover:text-primary-cyan transition-colors" href="#">Pricing</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-sm font-semibold text-slate-300 hover:text-white transition-colors">Sign In</button>
+<button class="bg-primary-cyan text-black px-6 py-2 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(0,245,255,0.3)] hover:shadow-[0_0_30px_rgba(0,245,255,0.5)] transition-all">
+                Get Started
+            </button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative pt-32 pb-20 px-6 lg:px-12 overflow-hidden">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-cyan/20 bg-primary-cyan/5 text-primary-cyan text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
+<span class="material-symbols-outlined text-xs">auto_awesome</span>
+                    Edge AI Powered
+                </div>
+<h1 class="text-white text-5xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-8">
+                    AI-powered resume skill analysis <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-cyan to-accent-violet">without paid APIs</span>
+</h1>
+<p class="text-slate-400 text-lg lg:text-xl font-normal leading-relaxed max-w-[600px] mb-10">
+                    Unlock professional insights using local intelligence. Fast, completely private, and no subscription required. 
+                </p>
+<div class="flex flex-col sm:flex-row gap-5">
+<button class="group flex items-center justify-center gap-3 bg-primary-cyan text-black px-8 py-4 rounded-xl text-base font-bold shadow-[0_0_25px_rgba(0,245,255,0.2)] hover:shadow-[0_0_40px_rgba(0,245,255,0.4)] transition-all">
+<span class="material-symbols-outlined">analytics</span>
+                        Analyze my resume
+                    </button>
+<button class="flex items-center justify-center gap-3 bg-transparent border border-white/10 px-8 py-4 rounded-xl text-base font-bold text-white hover:bg-white/5 transition-colors">
+                        View demo dashboard
+                    </button>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<div class="flex -space-x-3">
+<div class="size-10 rounded-full border-2 border-[#05070a] bg-slate-800 flex items-center justify-center text-[10px] font-bold">JD</div>
+<div class="size-10 rounded-full border-2 border-[#05070a] bg-slate-700 flex items-center justify-center text-[10px] font-bold">MK</div>
+<div class="size-10 rounded-full border-2 border-[#05070a] bg-slate-600 flex items-center justify-center text-[10px] font-bold">SL</div>
+</div>
+<p class="text-slate-500 text-sm font-medium tracking-tight">Trusted by 2.4k+ early adopters</p>
+</div>
+</div>
+<div class="relative flex items-center justify-center">
+<div class="absolute inset-0 orbit-halo scale-150 animate-pulse"></div>
+<div class="relative z-10 w-full max-w-[500px]">
+<div class="glass-card rounded-3xl p-1 overflow-hidden">
+<div class="bg-slate-900/40 p-8 rounded-[1.4rem]">
+<div class="flex justify-between items-start mb-10">
+<div>
+<div class="text-xs font-bold text-primary-cyan uppercase tracking-widest mb-1">Live Processing</div>
+<div class="text-white text-xl font-bold">Skill Breakdown</div>
+</div>
+<div class="size-12 rounded-full border-2 border-primary-cyan/30 flex items-center justify-center text-primary-cyan">
+<span class="material-symbols-outlined">hub</span>
+</div>
+</div>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold text-slate-400">
+<span>Technical Architecture</span>
+<span class="text-primary-cyan">94%</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary-cyan w-[94%] shadow-[0_0_10px_rgba(0,245,255,0.5)]"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold text-slate-400">
+<span>Leadership &amp; Strategy</span>
+<span class="text-accent-violet">82%</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-accent-violet w-[82%] shadow-[0_0_10px_rgba(168,85,247,0.5)]"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold text-slate-400">
+<span>Product Management</span>
+<span class="text-slate-300">67%</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-white/20 w-[67%]"></div>
+</div>
+</div>
+</div>
+<div class="mt-10 flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+<span class="material-symbols-outlined text-green-400">verified</span>
+<span class="text-sm font-medium text-slate-300">Ready for Senior Staff Roles</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-12 bg-[#05070a] relative">
+<div class="max-w-[1440px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-white text-3xl lg:text-4xl font-black mb-4">Deep Insight Engine</h2>
+<p class="text-slate-400 max-w-2xl mx-auto">Experience high-fidelity resume parsing that detects nuances local models usually miss.</p>
+</div>
+<div class="glass-card rounded-[2.5rem] p-4 lg:p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-1/3 bg-primary-cyan/5 blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent-violet/5 blur-[100px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+<div class="lg:col-span-1 space-y-4 border-r border-white/5 pr-6 hidden lg:block">
+<div class="p-3 bg-white/5 rounded-xl border border-white/10 text-white font-bold flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-cyan">dashboard</span>
+                            Overview
+                        </div>
+<div class="p-3 text-slate-500 font-medium flex items-center gap-3 hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined">history</span>
+                            Scan History
+                        </div>
+<div class="p-3 text-slate-500 font-medium flex items-center gap-3 hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined">settings</span>
+                            Model Settings
+                        </div>
+</div>
+<div class="lg:col-span-3">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div class="flex flex-col items-center gap-4">
+<div class="relative size-32">
+<svg class="size-full -rotate-90" viewBox="0 0 36 36">
+<circle class="stroke-white/5" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-primary-cyan" cx="18" cy="18" fill="none" r="16" stroke-dasharray="92, 100" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-2xl font-black text-white">92%</span>
+</div>
+</div>
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Job Fit Score</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="relative size-32">
+<svg class="size-full -rotate-90" viewBox="0 0 36 36">
+<circle class="stroke-white/5" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-accent-violet" cx="18" cy="18" fill="none" r="16" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-2xl font-black text-white">78%</span>
+</div>
+</div>
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Skill Density</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="relative size-32">
+<svg class="size-full -rotate-90" viewBox="0 0 36 36">
+<circle class="stroke-white/5" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-slate-400" cx="18" cy="18" fill="none" r="16" stroke-dasharray="64, 100" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-2xl font-black text-white">64%</span>
+</div>
+</div>
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Keywords Opt.</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold mb-4">Optimization Roadmap</h4>
+<div class="p-4 bg-white/5 rounded-2xl border border-white/5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-10 bg-primary-cyan/20 rounded-lg flex items-center justify-center text-primary-cyan">
+<span class="material-symbols-outlined">add_task</span>
+</div>
+<div>
+<div class="text-white text-sm font-bold">Add Kubernetes certifications</div>
+<div class="text-slate-500 text-xs">Increases Job Fit by +12%</div>
+</div>
+</div>
+<span class="text-primary-cyan material-symbols-outlined">arrow_forward_ios</span>
+</div>
+<div class="p-4 bg-white/5 rounded-2xl border border-white/5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-10 bg-accent-violet/20 rounded-lg flex items-center justify-center text-accent-violet">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<div class="text-white text-sm font-bold">Rephrase Impact Statements</div>
+<div class="text-slate-500 text-xs">Action verbs missing in "Experience" section</div>
+</div>
+</div>
+<span class="text-accent-violet material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-12">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group p-8 rounded-3xl bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-primary-cyan/50 transition-all duration-500">
+<div class="size-12 rounded-2xl bg-primary-cyan/10 text-primary-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">privacy_tip</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">100% On-Device</h3>
+<p class="text-slate-400 leading-relaxed">Your resume never touches our servers. The AI processing happens entirely within your browser's secure sandbox.</p>
+</div>
+<div class="group p-8 rounded-3xl bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-accent-violet/50 transition-all duration-500">
+<div class="size-12 rounded-2xl bg-accent-violet/10 text-accent-violet flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">token</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">No API Costs</h3>
+<p class="text-slate-400 leading-relaxed">Unlike other platforms that charge per scan or require your OpenAI key, SkillSense is free and powered by local open-weight models.</p>
+</div>
+<div class="group p-8 rounded-3xl bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-primary-cyan/50 transition-all duration-500">
+<div class="size-12 rounded-2xl bg-primary-cyan/10 text-primary-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">speed</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">Instant Latency</h3>
+<p class="text-slate-400 leading-relaxed">Zero network lag. Experience real-time resume refinement and feedback loops that are significantly faster than cloud-based alternatives.</p>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-12">
+<div class="max-w-[1440px] mx-auto relative rounded-[3rem] overflow-hidden bg-gradient-to-br from-[#0a0f1d] to-[#121212] border border-white/10 p-12 lg:p-24 text-center">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-primary-cyan/5 blur-[120px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center gap-8">
+<h2 class="text-white text-4xl lg:text-6xl font-black tracking-tight max-w-4xl">
+                    Ready to transform your career <span class="text-primary-cyan">intelligence?</span>
+</h2>
+<p class="text-slate-400 text-lg lg:text-xl max-w-2xl">
+                    Join the privacy revolution in career management. No trackers, no data leaks, just pure AI power at your fingertips.
+                </p>
+<div class="mt-4">
+<button class="bg-primary-cyan text-black px-10 py-5 rounded-2xl text-lg font-bold shadow-[0_0_30px_rgba(0,245,255,0.3)] hover:scale-105 transition-all">
+                        Launch Dashboard Now
+                    </button>
+<p class="mt-6 text-slate-500 text-sm font-medium">Free forever. Local AI processing.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-white/5 bg-[#05070a] px-6 lg:px-12 py-16">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-7 bg-white/10 rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">psychology</span>
+</div>
+<h2 class="text-white text-lg font-bold tracking-tighter">SkillSense AI</h2>
+</div>
+<div class="flex gap-12 text-sm font-medium text-slate-500">
+<a class="hover:text-primary-cyan transition-colors" href="#">Manifesto</a>
+<a class="hover:text-primary-cyan transition-colors" href="#">Github</a>
+<a class="hover:text-primary-cyan transition-colors" href="#">Security</a>
+<a class="hover:text-primary-cyan transition-colors" href="#">Discord</a>
+</div>
+<p class="text-sm text-slate-600 font-medium">© 2024 SkillSense. Built for the future of work.</p>
+</div>
+</footer>
+
+</body></html>

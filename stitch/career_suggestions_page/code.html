@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Career Suggestions - SkillSense AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] dark:text-slate-50 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white dark:bg-background-dark border-b border-[#e7edf3] dark:border-slate-800 px-4 md:px-10 lg:px-40 py-3 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#0d141b] dark:text-slate-50 text-lg font-bold leading-tight tracking-tight">SkillSense AI</h2>
+</div>
+<div class="hidden md:flex flex-1 items-stretch rounded-lg bg-[#e7edf3] dark:bg-slate-800 h-10 w-64">
+<div class="text-[#4c739a] flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-[#4c739a] dark:placeholder:text-slate-400" placeholder="Search insights..."/>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-primary" href="#">Analysis</a>
+<a class="hover:text-primary transition-colors" href="#">Paths</a>
+<a class="hover:text-primary transition-colors" href="#">Learning</a>
+</nav>
+<button class="bg-primary text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-primary/90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">upload_file</span>
+<span class="hidden sm:inline">Update Resume</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center border-2 border-primary/20" data-alt="User profile avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2SCaTVwlFxLb-P1cB3hVtrcKo4idoOKi4zMU6jfP0HYand4NS3_4tFa0KhiHmV76Vnh-3e_CO4PpN30MdmXP-rAy3wknBUMTbTIGjsxvVtni8r_31uGbx3Rii4mXDq26p_3YfbAOpRBEg0EHMaZnx52N9KKzKt6OZ1jIXR1yrx_DIGGvqrIy2OK3W79GyY1c2Kg38zPUpTKSaVffkP8AQrD7S-0iAdcAbqH8r5jRX46IQ6mFZTFl2wA6TBM1eu80kt-iNFD2jPyWj");'></div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-4 md:px-10 lg:px-40 py-8">
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between items-end gap-4 mb-8">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+                    AI-Powered Insights
+                </div>
+<h1 class="text-[#0d141b] dark:text-slate-50 text-4xl font-black leading-tight tracking-[-0.033em]">Your Career Growth Plan</h1>
+<p class="text-[#4c739a] dark:text-slate-400 text-lg">Hello Alex! Based on your last resume upload, we've identified 3 career paths where you'd excel.</p>
+</div>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-[#e7edf3] dark:bg-slate-800 text-[#0d141b] dark:text-slate-50 rounded-lg font-bold text-sm hover:bg-[#d9e3ed] transition-colors">
+<span class="material-symbols-outlined text-lg">refresh</span>
+                Refresh Analysis
+            </button>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Left Column: Role Suggestions -->
+<div class="lg:col-span-2 space-y-8">
+<div>
+<div class="flex items-center justify-between mb-4 px-1">
+<h2 class="text-xl font-bold">Suggested Roles</h2>
+<span class="text-xs font-semibold bg-primary/10 text-primary px-2 py-1 rounded">Top Matches</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Role Card 1 -->
+<div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-[#e7edf3] dark:border-slate-700 hover:border-primary/40 transition-all group">
+<div class="flex justify-between items-start mb-4">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">developer_mode_tv</span>
+</div>
+<div class="text-right">
+<span class="text-2xl font-black text-primary">92%</span>
+<p class="text-[10px] uppercase font-bold text-[#4c739a]">Match Score</p>
+</div>
+</div>
+<h3 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">Senior Frontend Developer</h3>
+<p class="text-sm text-[#4c739a] dark:text-slate-400 mb-4">High Demand • $140k - $180k Avg.</p>
+<div class="space-y-2 mb-6">
+<p class="text-sm leading-relaxed">Perfect fit for your 5+ years of React experience and recent TypeScript projects.</p>
+</div>
+<button class="w-full py-2 bg-primary/5 hover:bg-primary/10 text-primary font-bold rounded-lg transition-colors text-sm">View Requirements</button>
+</div>
+<!-- Role Card 2 -->
+<div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-[#e7edf3] dark:border-slate-700 hover:border-primary/40 transition-all group">
+<div class="flex justify-between items-start mb-4">
+<div class="size-12 rounded-lg bg-purple-100 flex items-center justify-center text-purple-600">
+<span class="material-symbols-outlined text-3xl">brush</span>
+</div>
+<div class="text-right">
+<span class="text-2xl font-black text-purple-600">85%</span>
+<p class="text-[10px] uppercase font-bold text-[#4c739a]">Match Score</p>
+</div>
+</div>
+<h3 class="text-lg font-bold mb-1 group-hover:text-purple-600 transition-colors">UI/UX Product Designer</h3>
+<p class="text-sm text-[#4c739a] dark:text-slate-400 mb-4">Growing Field • Remote Ready</p>
+<div class="space-y-2 mb-6">
+<p class="text-sm leading-relaxed">Leverages your strong portfolio in visual design and user-centric application flows.</p>
+</div>
+<button class="w-full py-2 bg-purple-50 hover:bg-purple-100 text-purple-600 font-bold rounded-lg transition-colors text-sm">Explore Path</button>
+</div>
+</div>
+</div>
+<!-- Skills to Learn Section -->
+<div>
+<h2 class="text-xl font-bold mb-4 px-1">Skills to Learn Next</h2>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-[#e7edf3] dark:border-slate-700 overflow-hidden">
+<div class="p-6 space-y-6">
+<!-- Skill 1 -->
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 shrink-0">
+<span class="material-symbols-outlined">api</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold">GraphQL &amp; Apollo</span>
+<span class="text-xs font-medium text-[#4c739a]">4-6 weeks to master</span>
+</div>
+<div class="w-full bg-[#e7edf3] dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+<div class="bg-orange-500 h-full w-[30%]"></div>
+</div>
+<p class="text-xs text-[#4c739a] mt-2">Required for "Product Engineer" roles at Tier 1 companies.</p>
+</div>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+<span class="material-symbols-outlined text-[#4c739a]">open_in_new</span>
+</button>
+</div>
+<!-- Skill 2 -->
+<div class="flex items-center gap-4 border-t border-slate-50 dark:border-slate-700 pt-6">
+<div class="size-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold">System Design</span>
+<span class="text-xs font-medium text-[#4c739a]">8-10 weeks to master</span>
+</div>
+<div class="w-full bg-[#e7edf3] dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+<div class="bg-blue-500 h-full w-[15%]"></div>
+</div>
+<p class="text-xs text-[#4c739a] mt-2">The missing link for Senior-level role progression.</p>
+</div>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+<span class="material-symbols-outlined text-[#4c739a]">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 p-4 text-center border-t border-[#e7edf3] dark:border-slate-700">
+<button class="text-primary text-sm font-bold hover:underline">View All 8 Skill Recommendations</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Resume Improvements & Encouragement -->
+<div class="space-y-8">
+<!-- Resume Tips Card -->
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border-l-4 border-primary p-6">
+<div class="flex items-center gap-2 mb-4 text-[#0d141b] dark:text-slate-50">
+<span class="material-symbols-outlined text-primary">description</span>
+<h3 class="font-bold text-lg">Resume Quick Fixes</h3>
+</div>
+<p class="text-sm text-[#4c739a] mb-6">Boost your response rate by addressing these AI-detected gaps:</p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-green-500 text-xl">check_circle</span>
+<span class="text-sm">Add <strong>"Agile Methodology"</strong> to your Skills section to match 80% of job descriptions.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-amber-500 text-xl">error</span>
+<span class="text-sm">Quantify your <strong>Marketing Project</strong> impact. Use numbers like "Increased CTR by 20%".</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-amber-500 text-xl">error</span>
+<span class="text-sm">Update your <strong>LinkedIn</strong> link; the current one leads to a 404 error.</span>
+</li>
+</ul>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">Fix Resume Now</button>
+</div>
+<!-- Motivation/Banner -->
+<div class="bg-gradient-to-br from-primary to-blue-700 rounded-xl p-6 text-white overflow-hidden relative">
+<div class="relative z-10">
+<h4 class="font-bold text-xl mb-2">You're close!</h4>
+<p class="text-blue-100 text-sm mb-4 leading-relaxed">You're just 2 key skills away from being a 95% match for your dream Lead role.</p>
+<div class="bg-white/20 rounded-lg p-3 flex items-center gap-3">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="text-xs font-bold uppercase tracking-tight">+12% Match Improvement this week</span>
+</div>
+</div>
+<span class="material-symbols-outlined absolute -bottom-6 -right-6 text-white/10 text-[120px] select-none">rocket_launch</span>
+</div>
+<!-- Learning Resources -->
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-[#e7edf3] dark:border-slate-700 p-6">
+<h3 class="font-bold text-base mb-4">Recommended Courses</h3>
+<div class="space-y-4">
+<div class="flex gap-3 group cursor-pointer">
+<div class="size-16 rounded bg-slate-100 shrink-0 bg-cover bg-center" data-alt="Course thumbnail showing code and design" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeOQ9idgAG43dOA-baK2iTBw5uXRD2GveJrAS64VFd8B72qLCt1trvLiy6PZ7LADqsiq_uAmN136GGcVuNmKPWvxDneMibsaSpfGystQ0r8W1f5QltVgyMXqb-aSjEuS0cLqRcHwBwx-5D7IZ99aiQF4l6ReB-M8DrCW2O2rf__t8P-kreTgFsJYH6DYpZDN_TTNbEpJjdLtfoJAh4MOD4qi4N-5oV8NJijLqB3GytXT4pnQlBk4LuZu3gsW8BQt0h-gY6jmBUeMZi')"></div>
+<div>
+<h4 class="text-sm font-bold group-hover:text-primary transition-colors">Mastering React 18 Patterns</h4>
+<p class="text-xs text-[#4c739a]">Advanced • 12 hours</p>
+</div>
+</div>
+<div class="flex gap-3 group cursor-pointer">
+<div class="size-16 rounded bg-slate-100 shrink-0 bg-cover bg-center" data-alt="Course thumbnail for system architecture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNH6Uc5DOrR-gImEfl-vGde7sjrL0ojmTH7r0V21ewsT0yo4h4rW7pCu_VQTX_UsxCrGapU028W-kWn2F5SuoHgWdeZXjkwsGqOgEw86FCos1ltjvSNpPvKhqTEupL1mkqtg9Ez7HH8KhVko7EfCtfwCMlrq1FDk-aoPCd1UFW1jYFoXoMJbQAJFhKtoiGiLbxrM8LKNhBgQhrJcwdWxIyn8HIJu1LOO43g34bGgRUaEDqsP8FPDN6FSdvUXcOHKfWF_MlGWZOPR3t')"></div>
+<div>
+<h4 class="text-sm font-bold group-hover:text-primary transition-colors">Pragmatic System Design</h4>
+<p class="text-xs text-[#4c739a]">Intermediate • 24 hours</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Note -->
+<footer class="mt-16 pt-8 border-t border-[#e7edf3] dark:border-slate-800 text-center">
+<p class="text-sm text-[#4c739a]">SkillSense AI uses secure LLMs to analyze your career data. Your privacy is our priority.</p>
+<div class="flex justify-center gap-6 mt-4">
+<a class="text-xs font-medium hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-xs font-medium hover:text-primary" href="#">Terms of Service</a>
+<a class="text-xs font-medium hover:text-primary" href="#">Help Center</a>
+</div>
+</footer>
+</main>
+</body></html>

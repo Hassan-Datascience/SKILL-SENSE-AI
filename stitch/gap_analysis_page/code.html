@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gap Analysis | SkillSense AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>.form-input {
+    appearance: none;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuA3zUN-sZiQ3htJCQpWsSPEfMQfbFLzV8h-vCoj4_04EKbX8GCdmPTNTgPmdVuVRs_rlp9uoLspep2VBNUlFvpPcgnSFhOeTxEe8_oFawC4Tm6SbFmZpbImNizuYhWQcQNt2tk01GvRDL3XZHLUeCfraLLU-inmmn_W0O3BQRKflXrGgclprxnjpRmbyEhztyoDR-nVUXN7yPRHw9vXl_FgD6EkG5byG-v19YrbnN-u99oIMAhXnVEHiQlWZ95SSO3MTtZjk5kCuG-f);
+    background-repeat: no-repeat;
+    background-position: right 1rem center
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d141b] dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-3 bg-white dark:bg-slate-900">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">SkillSense AI</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Resume Analysis</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Gap Analysis</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Career Path</a>
+</div>
+<div class="flex gap-2">
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800 text-[#0d141b] dark:text-slate-100 hover:bg-slate-300 dark:hover:bg-slate-700">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800 text-[#0d141b] dark:text-slate-100 hover:bg-slate-300 dark:hover:bg-slate-700">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200" data-alt="Profile picture of a professional user" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpLmAD8ZM_JDfZTZ9h5FrMHGlvvDoSM5m7ZCbkel0L0JixAPjf5IBCMg0oDZJCGVJ68egk2EYoWOZ31J5cyTFbDdF3Obn75F4RWM0pBRgnckzKvzigLaoHLQt2M-WmpT1mq6VrX9lodluxZerCRmzc1eg_sj3Df8IQazeuS5KYO5s6R8sXAM_y2_c838Z2Sr-1edQ6QtOU-0VRPBgi8qrDQMfGlTgUFn4FJ2g7V1NzrHKs5hNTiyr6Xm5vXl-P2B1PU9-V28cR8oa3");'></div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-[1024px] flex-1 px-6">
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between items-end gap-4 pb-6">
+<div class="flex flex-col gap-2">
+<h1 class="text-[#0d141b] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Gap Analysis</h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg">Compare your current resume against industry standards for your dream role.</p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center justify-center rounded-lg h-10 px-4 bg-slate-200 dark:bg-slate-800 text-sm font-bold transition-all hover:bg-slate-300">
+<span class="material-symbols-outlined mr-2 text-lg">download</span>
+                                Export Report
+                            </button>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold transition-all hover:opacity-90">
+<span class="material-symbols-outlined mr-2 text-lg">auto_fix_high</span>
+                                Optimize Resume
+                            </button>
+</div>
+</div>
+<!-- Input Section -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Target Role</label>
+<select class="form-input w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 h-14 px-4 text-base focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
+<option value="sfd">Senior Frontend Developer</option>
+<option value="pm">Technical Product Manager</option>
+<option value="ds">Data Scientist</option>
+<option value="de">DevOps Engineer</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Experience Level</label>
+<div class="flex gap-2">
+<button class="flex-1 h-14 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-800 text-sm font-medium">Junior</button>
+<button class="flex-1 h-14 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-800 text-sm font-medium">Mid</button>
+<button class="flex-1 h-14 rounded-lg bg-primary text-white text-sm font-bold">Senior</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Summary Analysis Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+<!-- Match Circular Chart -->
+<div class="lg:col-span-1 bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center text-center shadow-sm">
+<h3 class="text-lg font-bold mb-6">Overall Match Score</h3>
+<div class="relative flex items-center justify-center">
+<!-- SVG Circular Progress -->
+<svg class="w-40 h-40 transform -rotate-90">
+<circle class="text-slate-100 dark:text-slate-800" cx="80" cy="80" fill="transparent" r="70" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary" cx="80" cy="80" fill="transparent" r="70" stroke="currentColor" stroke-dasharray="440" stroke-dashoffset="123" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="text-4xl font-black text-slate-900 dark:text-white">72%</span>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Match</span>
+</div>
+</div>
+<p class="mt-6 text-sm text-slate-500">You're a strong candidate. Focus on 3 key missing technical skills to reach 90%.</p>
+</div>
+<!-- Analysis Stats Cards -->
+<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-wider">Identified Skills</p>
+</div>
+<p class="text-3xl font-black">24</p>
+</div>
+<div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span>React, Tailwind, Node.js</span>
+<span class="text-green-500 font-bold">+3 recently added</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-2 mb-2 text-primary">
+<span class="material-symbols-outlined">warning</span>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-wider">Skill Gaps</p>
+</div>
+<p class="text-3xl font-black">9</p>
+</div>
+<div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span>TypeScript, GraphQL, Docker</span>
+<span class="text-primary font-bold">Priority focus</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-purple-500">trending_up</span>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-wider">Market Demand</p>
+</div>
+<p class="text-3xl font-black">High</p>
+</div>
+<div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500">
+                                    8.2k active postings for this role.
+                                </div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-6 rounded-xl border border-primary/20 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary">school</span>
+<p class="text-sm font-bold text-primary uppercase tracking-wider">Learning Paths</p>
+</div>
+<p class="text-3xl font-black">3 Path</p>
+</div>
+<div class="mt-4 pt-4 border-t border-primary/10 text-xs text-primary font-bold flex items-center">
+                                    View Courses <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Skill Comparison -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<div class="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 px-6 py-4 flex justify-between items-center">
+<h2 class="text-lg font-bold">Skill Gap Breakdown</h2>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs font-bold border border-slate-200 dark:border-slate-600">All</span>
+<span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs font-bold border border-slate-200 dark:border-slate-600 text-slate-400">Technical</span>
+<span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs font-bold border border-slate-200 dark:border-slate-600 text-slate-400">Soft Skills</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2">
+<!-- Existing Skills -->
+<div class="p-6 border-r border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-2 bg-green-500 rounded-full"></div>
+<h3 class="font-bold text-slate-700 dark:text-slate-300">Found in Resume</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<span class="font-medium">React.js</span>
+</div>
+<span class="text-xs font-bold text-slate-400">4 Years</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<span class="font-medium">Tailwind CSS</span>
+</div>
+<span class="text-xs font-bold text-slate-400">2 Years</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<span class="font-medium">Node.js</span>
+</div>
+<span class="text-xs font-bold text-slate-400">3 Years</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 opacity-60">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<span class="font-medium">Project Management</span>
+</div>
+<span class="text-xs font-bold text-slate-400">1 Year</span>
+</div>
+</div>
+</div>
+<!-- Missing Skills -->
+<div class="p-6 bg-primary/[0.02]">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-2 bg-primary rounded-full"></div>
+<h3 class="font-bold text-slate-700 dark:text-slate-300">Missing Gaps</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-900 border-2 border-primary/20 shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">priority_high</span>
+<span class="font-bold">TypeScript</span>
+</div>
+<button class="text-[10px] bg-primary text-white px-2 py-1 rounded font-bold uppercase">Critical</button>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined">circle_notifications</span>
+<span class="font-medium">GraphQL</span>
+</div>
+<span class="text-xs font-bold text-slate-400">High Demand</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined">circle_notifications</span>
+<span class="font-medium">Unit Testing (Jest)</span>
+</div>
+<span class="text-xs font-bold text-slate-400">Recommended</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined">circle_notifications</span>
+<span class="font-medium">Docker</span>
+</div>
+<span class="text-xs font-bold text-slate-400">Optional</span>
+</div>
+</div>
+<div class="mt-6 p-4 rounded-lg bg-primary text-white shadow-lg">
+<div class="flex gap-4">
+<div class="size-12 rounded-lg bg-white/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+</div>
+<div class="flex flex-col">
+<p class="text-sm font-bold">Fast-Track Your Profile</p>
+<p class="text-xs opacity-90 mt-1">Learning TypeScript could increase your match score by 12% instantly.</p>
+<a class="mt-2 text-xs font-black underline flex items-center gap-1" href="#">Start Course <span class="material-symbols-outlined text-xs">open_in_new</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillSense AI - Resume Analysis</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --navy-deep: #020617;
+            --navy-card: rgba(15, 23, 42, 0.6);
+            --cyan-glow: #22d3ee;
+        }
+        body {
+            background: radial-gradient(circle at 50% -20%, #1e293b 0%, #020617 100%);
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: var(--navy-card);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-border {
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.2);
+            border: 2px dashed rgba(34, 211, 238, 0.4);
+        }
+        .glow-border:hover {
+            border-color: var(--cyan-glow);
+            box-shadow: 0 0 25px rgba(34, 211, 238, 0.3);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#22d3ee",
+                        "navy": {
+                            900: "#0f172a",
+                            950: "#020617",
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="text-slate-200 min-h-screen">
+<div class="relative flex flex-col min-h-screen">
+<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-navy-950/40 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(34,211,238,0.4)]">
+<span class="material-symbols-outlined text-navy-950 font-bold">orbit</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-white">SkillSense <span class="text-primary">AI</span></span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="hover:text-primary transition-colors text-primary" href="#">Resume Scan</a>
+<a class="hover:text-primary transition-colors" href="#">Career Path</a>
+</nav>
+<div class="h-8 w-[1px] bg-white/10 hidden md:block"></div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 ring-2 ring-primary/20" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAl9E9fPThhFzGPLyE18_B39l9odpUbOk7hYk1kLOfkOLvzTbBQJM3ui5foabUqxe_x2xeV3L55HlHpz9NMkB7094jdCY-xPeIEo20qYi1QVBfNSYWPEYHcsCicd9hEQkSmWHoaIJFUtwJz9UCpTkah04ndQKQj16a4S_UFxrI3BRmVEVseHHmFo5pGskPAnOL75A1cKjeU-8JmGx0M34HqD4FF_ax3exTxVNTpnXjE8A58JI9EkNj18pYOJoDQ0auv7a3admXH0tLI");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center pt-24 pb-12 px-4 relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white/5 rounded-full pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-primary/5 rounded-full pointer-events-none"></div>
+<div class="w-full max-w-4xl z-10">
+<div class="flex items-center justify-center gap-4 mb-10">
+<div class="flex items-center gap-2">
+<div class="size-8 rounded-full bg-primary flex items-center justify-center text-navy-950 font-bold text-sm">1</div>
+<span class="text-sm font-semibold text-white">Upload</span>
+</div>
+<div class="w-12 h-[2px] bg-primary/30"></div>
+<div class="flex items-center gap-2">
+<div class="size-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 font-bold text-sm">2</div>
+<span class="text-sm font-medium text-slate-500">Analyze</span>
+</div>
+<div class="w-12 h-[2px] bg-slate-800"></div>
+<div class="flex items-center gap-2">
+<div class="size-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 font-bold text-sm">3</div>
+<span class="text-sm font-medium text-slate-500">Insights</span>
+</div>
+</div>
+<div class="glass-card rounded-[2rem] p-10 shadow-2xl">
+<div class="text-center mb-10">
+<h1 class="text-4xl font-bold text-white mb-3">Accelerate Your Career</h1>
+<p class="text-slate-400 max-w-lg mx-auto">Upload your professional story. Our Orbit-engine maps your skills against global industry standards.</p>
+</div>
+<div class="glow-border rounded-2xl bg-navy-900/40 p-12 text-center group transition-all cursor-pointer">
+<div class="inline-flex items-center justify-center size-20 rounded-full bg-primary/10 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl text-primary">upload_file</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">Drop your resume here</h3>
+<p class="text-slate-400 mb-8">PDF, DOCX, or TXT (Max 10MB)</p>
+<button class="px-8 py-3 bg-primary text-navy-950 font-bold rounded-xl hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] transition-all">
+                            Browse Files
+                        </button>
+</div>
+<div class="mt-10 space-y-6">
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Scanning architecture &amp; skills...</span>
+</div>
+<span class="text-primary font-bold">42%</span>
+</div>
+<div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden shadow-inner">
+<div class="h-full bg-primary shadow-[0_0_10px_#22d3ee] rounded-full transition-all duration-500" style="width: 42%"></div>
+</div>
+<div class="flex gap-6 text-[11px] uppercase tracking-widest text-slate-500 font-bold">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">check_circle</span> Parsed</span>
+<span class="flex items-center gap-1 text-primary/60">Extracting</span>
+<span class="flex items-center gap-1">Mapping</span>
+</div>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5">
+<span class="material-symbols-outlined text-primary">shield_lock</span>
+<div>
+<h4 class="text-sm font-bold text-white">Local AI</h4>
+<p class="text-xs text-slate-400">Analysis happens locally. Your resume text never leaves your session.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5">
+<span class="material-symbols-outlined text-primary">visibility_off</span>
+<div>
+<h4 class="text-sm font-bold text-white">Privacy First</h4>
+<p class="text-xs text-slate-400">We don't train models on your personal data or work history.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5">
+<span class="material-symbols-outlined text-primary">verified</span>
+<div>
+<h4 class="text-sm font-bold text-white">GDPR Compliant</h4>
+<p class="text-xs text-slate-400">Full control over your data with one-click deletion policies.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="py-8 text-center text-slate-600 text-sm border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<p>© 2024 SkillSense AI Laboratory. Secure Skill Analysis.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">System Status</a>
+<a class="hover:text-primary" href="#">Documentation</a>
+<a class="hover:text-primary" href="#">Support</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

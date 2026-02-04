@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Gap Analysis | SkillSense AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --bg-deep: #05070a;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --cyan: #00f2ff;
+            --magenta: #ff00ff;
+        }
+        body {
+            background-color: var(--bg-deep);
+            background-image: 
+                radial-gradient(circle at 50% -20%, rgba(0, 242, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 0% 100%, rgba(255, 0, 255, 0.03) 0%, transparent 40%);
+        }
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+        }
+        .orbit-gradient {
+            background: linear-gradient(135deg, var(--cyan), var(--magenta));
+        }
+        .text-gradient {
+            background: linear-gradient(to right, var(--cyan), var(--magenta));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .progress-ring-circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00f2ff",
+                        "secondary": "#ff00ff",
+                        "background-dark": "#05070a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display text-slate-200 antialiased overflow-x-hidden">
+<div class="relative min-h-screen flex flex-col">
+<header class="flex items-center justify-between px-10 py-6">
+<div class="flex items-center gap-3">
+<div class="size-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-magenta-500 p-[1px]">
+<div class="bg-[#05070a] size-full rounded-[11px] flex items-center justify-center">
+<span class="material-symbols-outlined text-cyan-400 text-2xl">bubble_chart</span>
+</div>
+</div>
+<h2 class="text-xl font-black tracking-tighter uppercase">SkillSense AI</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 glass-card px-8 py-2.5 rounded-full">
+<a class="text-sm font-medium text-slate-400 hover:text-cyan-400 transition-colors" href="#">Dashboard</a>
+<a class="text-sm font-medium text-slate-400 hover:text-cyan-400 transition-colors" href="#">Analyze</a>
+<a class="text-sm font-bold text-white border-b-2 border-cyan-400 py-1" href="#">Gap Analysis</a>
+<a class="text-sm font-medium text-slate-400 hover:text-cyan-400 transition-colors" href="#">Pathways</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full border border-glass-border overflow-hidden p-0.5">
+<img alt="Profile" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpLmAD8ZM_JDfZTZ9h5FrMHGlvvDoSM5m7ZCbkel0L0JixAPjf5IBCMg0oDZJCGVJ68egk2EYoWOZ31J5cyTFbDdF3Obn75F4RWM0pBRgnckzKvzigLaoHLQt2M-WmpT1mq6VrX9lodluxZerCRmzc1eg_sj3Df8IQazeuS5KYO5s6R8sXAM_y2_c838Z2Sr-1edQ6QtOU-0VRPBgi8qrDQMfGlTgUFn4FJ2g7V1NzrHKs5hNTiyr6Xm5vXl-P2B1PU9-V28cR8oa3"/>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto w-full px-6 py-12">
+<div class="flex flex-col items-center text-center mb-16">
+<h1 class="text-6xl md:text-7xl font-black mb-6 tracking-tight text-white">Skill Gap Analysis</h1>
+<p class="text-slate-400 text-xl max-w-2xl mb-10">Select your target trajectory to uncover the missing links in your professional stack.</p>
+<div class="w-full max-w-md relative group">
+<div class="absolute -inset-0.5 orbit-gradient rounded-2xl opacity-20 group-hover:opacity-40 transition duration-500"></div>
+<select class="relative w-full glass-card h-16 px-6 rounded-2xl text-lg font-medium text-white appearance-none focus:outline-none focus:ring-1 focus:ring-cyan-500 cursor-pointer">
+<option value="sfd">Senior Frontend Developer</option>
+<option value="pm">Technical Product Manager</option>
+<option value="ds">Data Scientist</option>
+<option value="de">DevOps Engineer</option>
+</select>
+<div class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div class="relative flex justify-center mb-20">
+<div class="relative size-72 md:size-96 flex items-center justify-center">
+<svg class="absolute inset-0 size-full">
+<defs>
+<linearGradient id="gaugeGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00f2ff"></stop>
+<stop offset="100%" stop-color="#ff00ff"></stop>
+</linearGradient>
+</defs>
+<circle cx="50%" cy="50%" fill="none" r="46%" stroke="rgba(255,255,255,0.05)" stroke-width="12"></circle>
+<circle class="progress-ring-circle" cx="50%" cy="50%" fill="none" r="46%" stroke="url(#gaugeGradient)" stroke-dasharray="100 100" stroke-dashoffset="28" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="text-center z-10">
+<span class="block text-7xl md:text-8xl font-black text-white leading-none">72%</span>
+<span class="block text-xs md:text-sm font-bold tracking-[0.4em] uppercase text-cyan-400 mt-2">Match Level</span>
+</div>
+<div class="absolute top-0 right-0 glass-card p-3 rounded-xl border border-cyan-500/30">
+<span class="text-xs font-black text-cyan-400 uppercase tracking-tighter">High Tier</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+<div class="glass-card rounded-[2.5rem] p-10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 blur-3xl rounded-full"></div>
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-400">verified</span>
+                            Existing Skills
+                        </h3>
+<span class="text-slate-500 text-sm font-mono uppercase tracking-widest">14 Identified</span>
+</div>
+<div class="flex flex-wrap gap-3">
+<div class="px-4 py-2 glass-card rounded-xl text-sm font-medium flex items-center gap-2 border-white/5 group-hover:border-cyan-500/30 transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> React.js
+                        </div>
+<div class="px-4 py-2 glass-card rounded-xl text-sm font-medium flex items-center gap-2 border-white/5 group-hover:border-cyan-500/30 transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Tailwind CSS
+                        </div>
+<div class="px-4 py-2 glass-card rounded-xl text-sm font-medium flex items-center gap-2 border-white/5 group-hover:border-cyan-500/30 transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Node.js
+                        </div>
+<div class="px-4 py-2 glass-card rounded-xl text-sm font-medium flex items-center gap-2 border-white/5 group-hover:border-cyan-500/30 transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Redux
+                        </div>
+<div class="px-4 py-2 glass-card rounded-xl text-sm font-medium flex items-center gap-2 border-white/5 group-hover:border-cyan-500/30 transition-colors opacity-60">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Git
+                        </div>
+</div>
+</div>
+<div class="glass-card rounded-[2.5rem] p-10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-magenta-500/5 blur-3xl rounded-full"></div>
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold flex items-center gap-3">
+<span class="material-symbols-outlined text-magenta-500">warning</span>
+                            Missing or Weak
+                        </h3>
+<span class="text-slate-500 text-sm font-mono uppercase tracking-widest">8 Gaps Found</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 glass-card rounded-2xl border-white/5">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-magenta-500">layers</span>
+<span class="font-bold">TypeScript</span>
+</div>
+<span class="px-3 py-1 bg-magenta-500/20 text-magenta-400 rounded-lg text-[10px] font-black uppercase tracking-wider border border-magenta-500/30">High Impact</span>
+</div>
+<div class="flex items-center justify-between p-4 glass-card rounded-2xl border-white/5">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-magenta-500">cloud_done</span>
+<span class="font-bold">System Architecture</span>
+</div>
+<span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-lg text-[10px] font-black uppercase tracking-wider border border-cyan-500/30">High Impact</span>
+</div>
+<div class="flex items-center justify-between p-4 glass-card rounded-2xl border-white/5 opacity-80">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-400">api</span>
+<span class="font-bold">GraphQL</span>
+</div>
+<span class="text-xs text-slate-500 font-medium">Recommended</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-20">
+<div class="flex flex-col items-center mb-12">
+<h3 class="text-2xl font-black uppercase tracking-widest text-gradient">Suggested Next Steps</h3>
+<div class="h-1 w-20 orbit-gradient mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
+<div class="hidden md:block absolute top-[4.5rem] left-0 right-0 h-px bg-gradient-to-r from-transparent via-glass-border to-transparent"></div>
+<div class="relative flex flex-col items-center p-8">
+<div class="size-12 rounded-full glass-card border-cyan-500/50 border flex items-center justify-center mb-6 relative z-10 bg-[#05070a]">
+<span class="material-symbols-outlined text-cyan-400">auto_awesome</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Refine Resume</h4>
+<p class="text-sm text-slate-400 text-center">Incorporate TypeScript keywords and architectural projects.</p>
+<span class="mt-4 text-[10px] font-mono text-slate-600">IMMEDIATE</span>
+</div>
+<div class="relative flex flex-col items-center p-8">
+<div class="size-12 rounded-full glass-card border-magenta-500/50 border flex items-center justify-center mb-6 relative z-10 bg-[#05070a]">
+<span class="material-symbols-outlined text-magenta-500">school</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Skill Acquisition</h4>
+<p class="text-sm text-slate-400 text-center">Complete the "Advanced Design Patterns" micro-certification.</p>
+<span class="mt-4 text-[10px] font-mono text-slate-600">NEXT 2 WEEKS</span>
+</div>
+<div class="relative flex flex-col items-center p-8">
+<div class="size-12 rounded-full glass-card border-white/20 border flex items-center justify-center mb-6 relative z-10 bg-[#05070a]">
+<span class="material-symbols-outlined text-slate-200">rocket_launch</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Apply &amp; Track</h4>
+<p class="text-sm text-slate-400 text-center">Target 5 roles matching your 90% projected score.</p>
+<span class="mt-4 text-[10px] font-mono text-slate-600">IN 1 MONTH</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="py-12 border-t border-glass-border text-center">
+<p class="text-xs text-slate-500 font-mono tracking-widest uppercase">SkillSense AI Engine v2.4 // Distraction-Free Analysis Mode</p>
+</footer>
+</div>
+
+</body></html>
